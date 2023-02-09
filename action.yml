@@ -1,0 +1,18 @@
+name: "Coverage score calculate"
+description: "Calculates coverage score base on lcov.info file."
+author: "bumengi94"
+
+inputs:
+  lcov-file:
+    description: "The location of the 'lcov.info' file."
+    default: "./coverage/lcov.info"
+
+outputs:
+  score:
+    description: "The score."
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
+  args:
+    - ${{inputs.lcov-file}}
