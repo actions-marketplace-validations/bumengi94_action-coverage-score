@@ -19,3 +19,7 @@ The score of the calculation result.
     uses: bumengi94/action-coverage-score@{VERSION}
     with:
         lcov-file: './coverage/lcov.info'
+
+## LICENSE
+
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
