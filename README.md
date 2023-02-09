@@ -1,21 +1,21 @@
-# Hello world docker action
+# Coverage score calculate
 
-This action prints "Hello World" or "Hello" + the name of a person to greet to the log.
+Calculates coverage score base on lcov.info file.
 
 ## Inputs
 
-## `who-to-greet`
+## `lcov-file`
 
-**Required** The name of the person to greet. Default `"World"`.
+**Optional** The lcov.info file location. Default `"./coverage/lcov.info"`.
 
 ## Outputs
 
-## `time`
+## `score`
 
-The time we greeted you.
+The score of the calculation result.
 
 ## Example usage
 
-uses: actions/hello-world-docker-action@v2
-with:
-who-to-greet: 'Mona the Octocat'
+    uses: bumengi94/action-coverage-score@{VERSION}
+    with:
+        lcov-file: './coverage/lcov.info'
