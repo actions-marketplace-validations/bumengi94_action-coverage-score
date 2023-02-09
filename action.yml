@@ -2,6 +2,10 @@ name: "Coverage score calculate"
 description: "Calculates coverage score base on lcov.info file."
 author: "bumengi94"
 
+branding:
+  icon: "box"
+  color: "purple"
+
 inputs:
   lcov-file:
     description: "The location of the 'lcov.info' file."
